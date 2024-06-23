@@ -1,37 +1,37 @@
-# Java Class Hierarchy - Aplicație 'Împarte surprize'
+# Java Class Hierarchy - 'Share Surprises' Application
 
-## Descriere
-Aplicația 'Împarte surprize' este un proiect ce vizează aprofundarea conceptelor de design a ierarhiei de clase în Java. Scopul principal al proiectului este să implementeze diverse concepte de programare orientată pe obiect, precum moștenirea, compunerea și agregarea, încapsularea, utilizarea interfețelor și genericitatea, într-un mod practic și eficient.
+## Description
+The 'Share Surprises' application is a project aimed at deepening the understanding of class hierarchy design concepts in Java. The main goal of the project is to implement various object-oriented programming concepts, such as inheritance, composition and aggregation, encapsulation, interface utilization, and generics, in a practical and efficient manner.
 
-## Scopuri
-- Reutilizarea funcționalității prin diverse procedee, inclusiv moștenire, compunere și agregare.
-- Implementarea unei arhitecturi de clase de nivel mediu de complexitate, cu o organizare corespunzătoare a codului.
-- Lucrul cu obiecte de tipuri diferite dintr-o perspectivă comună, folosind upcasting.
-- Proiectarea și utilizarea interfețelor în comunicarea dintre componente.
-- Implementarea conceptului de genericitate în dezvoltarea software.
+## Objectives
+- Reuse functionality through various means, including inheritance, composition, and aggregation.
+- Implement a moderately complex class architecture with appropriate code organization.
+- Work with objects of different types from a common perspective using upcasting.
+- Design and use interfaces for communication between components.
+- Implement the concept of generics in software development.
 
-## Implementare
-Proiectul este structurat în mai multe secțiuni, voi detalia fiecare secțiune în parte:
+## Implementation
+The project is structured into several sections, each detailed below:
 
-### 1. Tipuri de surprize
-Fiecare surpriză este reprezentată printr-o clasă ce implementează interfația `ISurprise`. Există trei tipuri de surprize:
+### 1. Types of Surprises
+Each surprise is represented by a class that implements the ISurprise interface. There are three types of surprises:
 - FortuneCookie
 - Candies
 - MinionToy
 
-### 2. Depozitarea surprizelor
-Surprizele sunt depozitate în diverse tipuri de containere, care dictează modul de stocare și ordinea în care sunt împărțite. Pentru acest lucru, se utilizează interfața `IBag`, iar fiecare container implementează această interfață.
+### 2. Storing Surprises
+Surprises are stored in various types of containers, which dictate the storage method and the order in which they are distributed. For this purpose, the IBag interface is used, and each container implements this interface.
 
-### 3. Crearea surprizelor
-Clasa `GatherSurprises` este responsabilă pentru generarea aleatoare a surprizelor, fie într-un număr specificat, fie doar a unei surprize.
+### 3. Creating Surprises
+The GatherSurprises class is responsible for the random generation of surprises, either in a specified number or just a single surprise.
 
-### 4. Crearea containerelor
-Pentru crearea de containere, se utilizează un mecanism de tip Factory Pattern, implementat prin interfața `IBagFactory`.
+### 4. Creating Containers
+To create containers, a Factory Pattern mechanism is used, implemented through the IBagFactory interface.
 
-### 5. Împărțirea surprizelor
-Se implementează clasa abstractă `AbstractGiveSurprises`, care definește mecanismul de împărțire a surprizelor. Aceasta este extinsă de trei clase concrete: `GiveSurpriseAndApplause`, `GiveSurpriseAndSing`, `GiveSurpriseAndHug`, fiecare oferind surprize în moduri diferite.
+### 5. Sharing Surprises
+The abstract class AbstractGiveSurprises defines the mechanism for sharing surprises. This class is extended by three concrete classes: GiveSurpriseAndApplause, GiveSurpriseAndSing, GiveSurpriseAndHug, each distributing surprises in different ways.
 
 
 --- 
 
-Aceasta este o descriere generală a proiectului. Pentru detalii specifice și codul sursă, vă recomand să accesați fișierele relevante.
+This is a general description of the project. For specific details and the source code, it is recommended to access the relevant files.
